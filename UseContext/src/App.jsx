@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Home from './Components/Home'
 
 function App() {
+  const [name, setName] = useState("Talha");
   return (
-    <div className='text-center top-0 text-4xl'>Hello World!</div>
+    <>
+    <Home name={name}/>
+    </>
   )
 }
 
